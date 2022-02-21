@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="table-users">
+   <div class="header">Scrapped Wiki</div>
+   <p style="text-align:center"><u><b>{{heading}}</b></u></p> 
+
+      {{Summary}}<br><br>
+      __________________________________________________________________________________________<br><br>  
+      <u><b>The Reference Links:---</b></u><br><br>
+      {{Ref_link}}<br><br>
+      __________________________________________________________________________________________<br><br>  
+      <u><b>The Image Links:---</b></u><br><br>
+      {{Image_link}}<br><br>
+
+</div>
+<p style="text-align:center"><u><b>Created By Rakesh Shaw</b></u></p> 
+</body>
+</html>
